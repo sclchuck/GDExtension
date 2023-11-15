@@ -53,12 +53,16 @@
 
 ## 切换vs项目配置名称
 * 打开项目属性页的配置管理器
-![图 4](https://s2.loli.net/2023/11/15/mHRrzoI3hfAliu4.png)  
+
+![图 4](https://s2.loli.net/2023/11/15/mHRrzoI3hfAliu4.png) 
+
 ![Alt text](image.png)
 
 
 * 将默认的Debug与Release改为editor，template_debug, template_release, 其中editor由debug复制而来，剩下两个一一对应。
+
 ![图 5](https://s2.loli.net/2023/11/15/hPELuZ5wiX7FrQK.png)  
+
 ![Alt text](image-1.png)
 
 
@@ -111,6 +115,7 @@ libgdexample.windows.$(Configuration).x86_64
 * 将它们的代码复制并创建在你的工程里，一个示例如下（其中可创建.gdignore在中间目录下，放置每次obj都被错误导入）：
 
 ![Alt text](image-4.png)
+
 ![图 6](https://s2.loli.net/2023/11/15/1X2trJxGQBhcusH.png)  
 
  
@@ -122,17 +127,25 @@ libgdexample.windows.$(Configuration).x86_64
 * 检测到"RuntimeLibrary"的不匹配项
 ### 方法
 * 将项目属性的c/c++下的代码生成中的运行库改为/MT
+
 ![图 2](https://s2.loli.net/2023/11/15/LbuKeSPBJTko7dI.png)  
+
 ![Alt text](image-2.png)
+
 ## 预处理器
 ### 问题
 * 同上
+
 ### 方法
 * 将预处理器定义清空
+
 ![图 1](https://s2.loli.net/2023/11/15/Pt2WmcI15szrQEX.png)  
+
 ![Alt text](image-3.png)
+
 # 简化操作
 * 相关文件以上传github， 链接：
+
 ## 编译脚本
 * 写成.bat, 放入godot-cpp解压缩的根目录路，并运行
 ```
@@ -140,11 +153,13 @@ scons target=editor
 scons target=template_debug
 scons target=template_release
 ```
+
 ## 环境变量脚本
 * 写成.bat, 放入godot-cpp解压缩的根目录路，并运行
 ```
 setx GODOT_CPP_ENV_PATH %~dp0
 ```
+
 ## VS工程模板
 * 将配置好的vs工程，导出为模板。
 * 使用时，便可以直接在你的godot项目目录res://src/ 创建你的vs项目
