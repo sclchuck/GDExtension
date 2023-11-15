@@ -1,0 +1,1 @@
+setx GODOT_CPP_ENV_PATH %~dp0
