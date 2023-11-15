@@ -41,6 +41,13 @@
 * 本篇教程基于之前教程，并且默认为Windows10，64位，Godot版本4.1.3
 * 如果遇到任何问题，欢迎及时提出，如果配置成功了请点个赞，球球啦。
 
+## 之前教程
+
+https://blog.csdn.net/qq_31805591/article/details/129526634
+
+https://blog.csdn.net/qq_31805591/article/details/108805392
+
+
 # 编译godot-cpp库
 * 在github中的godot-cpp页面下载源代码
 * 在压缩包解压后的根目录中有SContruct，利用scons命令编译，生成的库在bin文件夹中
